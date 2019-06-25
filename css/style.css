@@ -1,0 +1,115 @@
+body {
+  background-color: #333;
+  color: #fff;
+}
+
+.navbar {
+  border-bottom: #008ed6 3px solid;
+  opacity: 0.8;
+}
+
+#home {
+  background-image: url("https://github.com/SyeDog/BootstrapProjects/blob/master/looplab/home.jpg?raw=true");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 700px;
+}
+
+#home #home-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  min-height: 700px;
+  width: 100%;
+}
+
+#home .fa {
+  background-color: #fff;
+  color: #008ed6;
+  font-size: 2em;
+  padding: 3px;
+  border-radius: 10%;
+}
+
+#explore #explore-header p {
+  font-size: 18pt;
+  font-weight: 300;
+}
+
+#explore img {
+  width: 100%;
+  height: 100%;
+}
+
+#explore .row h3, #explore .row p {
+  color: gray;
+}
+
+#explore .fa {
+  background-color: #333;
+  font-size: 2em;
+  padding: 3px;
+  border-radius: 10%;
+}
+
+#create #create-header p {
+  font-size: 18pt;
+  font-weight: 300;
+}
+
+#create img {
+  width: 100%;
+  height: 100%;
+}
+
+#create .fa {
+  background-color: white;
+  color: #008ed6;
+  border-radius: 10%;
+  padding: 3px;
+  font-size: 2em;
+}
+
+#share #share-header p {
+  font-weight: 300;
+  font-size: 18pt;
+}
+
+#share img {
+  width: 100%;
+  height: 100%;
+}
+
+#share .row h3, #share .row p {
+  color: gray;
+}
+
+#share .fa {
+  background-color: #333;
+  border-radius: 10%;
+  padding: 3px;
+  font-size: 2em;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal h5, .modal label {
+  color: black;
+}
+
+@media (max-width: 576px) {
+  #home-content1 {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

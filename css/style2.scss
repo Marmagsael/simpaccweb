@@ -1,0 +1,174 @@
+$bg-color:#162913;
+$font-color: white;
+$primary-color: #2ca01b;
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin subtitleHeader {
+    font-size: 18pt;
+    font-weight: 300;
+}
+@mixin buttonPrimary{
+    background-color: $primary-color;
+    border-radius: 100px;
+    color:white;
+}
+@mixin sectionHeader($color){
+    p{
+       font-weight: 300;
+       font-size: 18pt;
+    }
+    h1, p{
+        color: $color;
+    }
+}
+
+body{
+    background-color: $bg-color;
+    color:$font-color;
+}
+nav{
+    opacity: 0.8;
+    border-bottom: $primary-color 3px solid;
+}
+#home{
+    background-image: url("../images/simpacc-header.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    height: 100vh;
+    width:100%;
+    
+    .black-overlay{
+        background-color: rgba(0,0,0,0.7);
+        height: 100vh;
+        
+        #home-inner{
+            @include flexCenter();
+            min-height: 700px;
+        }
+
+        .home-footer-item{
+            width:30%;
+            padding: 5px;
+
+            .fa{
+                color:$primary-color;
+            }
+        }
+    }
+
+    p{
+        @include subtitleHeader();
+    }
+    .btn-custom{
+        @include buttonPrimary();
+        &:hover{
+            opacity:0.8;
+        }
+    }
+}
+#aboutUs{
+    height: auto;
+    width:100%;
+    
+    #aboutUsHeader{
+        @include sectionHeader($font-color);
+    }
+    #aboutUsBody{
+        background-color: white;
+        min-height:585px;
+        .subtitle-p, h6{
+            font-size: 18pt;
+            color: $primary-color;
+        }
+        h6{
+            font-weight:400;
+        }
+    }
+}
+#services{
+    height: auto;
+    width:100%;
+
+    #servicesHeader{
+        @include sectionHeader($primary-color);
+        background-color: rgb(209, 209, 209);
+    }
+    h6{
+        font-weight:400;
+        font-size: 18pt;
+    }
+    .fa{
+        color: $primary-color;
+        font-size: 2em;
+    }
+    .card-title{
+        font-size:16pt;
+        font-weight: 400;
+    }
+}
+#prices{
+    height: auto;
+    width: 100%;
+    #pricesHeader{
+        @include sectionHeader(gray);
+        background-color: white;
+    }
+    #pricesBody{
+        background-color: rgb(209, 209, 209);
+        min-height: 585px;
+        @include flexCenter();
+    }
+    .price-element-title{
+        background-color: rgba(0,0,0,0.5);
+        border-bottom: $primary-color 3px solid;
+    }
+    .fa{
+        color: $primary-color;
+    }
+    .btn{
+        border-radius: 100px;
+        border: $primary-color 3px solid;
+        font-size: 16pt;
+        font-weight: 400;
+    }
+    
+}
+#contact{
+    height: auto;
+    width:100%;
+
+    #contactHeader{
+        @include sectionHeader($font-color);
+    }
+    #contactBody{
+        min-height: 585px;
+        background-color: white;
+        
+        .col-md-4 .fa{
+            font-size: 3em;
+        }
+        .subtitle-p{
+            font-size: 18pt;
+            color: $primary-color;
+        }
+        .display-4{
+            font-size: 30pt;
+        }
+        .input-group-text{
+            background-color: $bg-color;
+            color: $font-color;
+        }
+        .btn-custom{
+            @include buttonPrimary();
+            &:hover{
+                opacity:0.8;
+            }
+        }
+        
+    }
+}

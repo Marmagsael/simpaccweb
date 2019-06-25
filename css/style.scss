@@ -1,0 +1,118 @@
+$bg-color:#333;
+$font-color:#fff;
+$primary-color:#008ed6;
+
+body{
+    background-color: $bg-color;
+    color:$font-color;
+}
+
+.navbar{
+    border-bottom: $primary-color 3px solid;
+    opacity: 0.8;
+
+}
+
+#home{
+    background-image: url('https://github.com/SyeDog/BootstrapProjects/blob/master/looplab/home.jpg?raw=true');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    min-height: 700px;
+    
+    #home-content{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0,0,0,0.8);
+        min-height: 700px;
+        width:100%;
+    }
+
+    .fa{
+        background-color: #fff;
+        color: $primary-color;
+        font-size: 2em;
+        padding:3px;
+        border-radius: 10%;
+    }
+}
+
+#explore{
+    #explore-header p{
+        font-size: 18pt;
+        font-weight:300;
+    }
+    img{
+        width:100%;
+        height:100%;
+    }
+    .row{
+        h3, p{
+            color:gray;
+        }
+    }
+    .fa{
+        background-color: $bg-color;
+        font-size: 2em;
+        padding:3px;
+        border-radius: 10%;
+    }
+}
+
+#create{
+    #create-header{
+        p{
+            font-size:18pt;
+            font-weight: 300;
+        }
+    }
+    img{
+        width:100%;
+        height:100%;
+    }
+    .fa{
+        background-color: white;
+        color: $primary-color;
+        border-radius:10%;
+        padding: 3px;
+        font-size: 2em;
+    }
+}
+
+#share{
+    #share-header{
+        p{
+            font-weight:300;
+            font-size:18pt;
+        }
+    }
+    img{
+        width:100%;
+        height:100%;
+    }
+    .row{
+        h3, p{
+            color:gray;
+        }
+    }
+    .fa{
+        background-color: $bg-color;
+        border-radius: 10%;
+        padding:3px;
+        font-size:2em;
+    }
+}
+
+.modal{
+    background-color: rgba(0,0,0,0.8);
+    h5, label{
+        color:black;
+    }
+}
+
+@media (max-width:576px){
+    #home-content1{
+        display:none;
+    }
+}

@@ -1,0 +1,217 @@
+body {
+  background-color: #162913;
+  color: white;
+}
+
+nav {
+  opacity: 0.8;
+  border-bottom: #2ca01b 3px solid;
+}
+
+#home {
+  background-image: url("../images/simpacc-header.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+#home .black-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+}
+
+#home .black-overlay #home-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 700px;
+}
+
+#home .black-overlay .home-footer-item {
+  width: 30%;
+  padding: 5px;
+}
+
+#home .black-overlay .home-footer-item .fa {
+  color: #2ca01b;
+}
+
+#home p {
+  font-size: 18pt;
+  font-weight: 300;
+}
+
+#home .btn-custom {
+  background-color: #2ca01b;
+  border-radius: 100px;
+  color: white;
+}
+
+#home .btn-custom:hover {
+  opacity: 0.8;
+}
+
+#aboutUs {
+  height: auto;
+  width: 100%;
+}
+
+#aboutUs #aboutUsHeader p {
+  font-weight: 300;
+  font-size: 18pt;
+}
+
+#aboutUs #aboutUsHeader h1, #aboutUs #aboutUsHeader p {
+  color: white;
+}
+
+#aboutUs #aboutUsBody {
+  background-color: white;
+  min-height: 585px;
+}
+
+#aboutUs #aboutUsBody .subtitle-p, #aboutUs #aboutUsBody h6 {
+  font-size: 18pt;
+  color: #2ca01b;
+}
+
+#aboutUs #aboutUsBody h6 {
+  font-weight: 400;
+}
+
+#services {
+  height: auto;
+  width: 100%;
+}
+
+#services #servicesHeader {
+  background-color: #d1d1d1;
+}
+
+#services #servicesHeader p {
+  font-weight: 300;
+  font-size: 18pt;
+}
+
+#services #servicesHeader h1, #services #servicesHeader p {
+  color: #2ca01b;
+}
+
+#services h6 {
+  font-weight: 400;
+  font-size: 18pt;
+}
+
+#services .fa {
+  color: #2ca01b;
+  font-size: 2em;
+}
+
+#services .card-title {
+  font-size: 16pt;
+  font-weight: 400;
+}
+
+#prices {
+  height: auto;
+  width: 100%;
+}
+
+#prices #pricesHeader {
+  background-color: white;
+}
+
+#prices #pricesHeader p {
+  font-weight: 300;
+  font-size: 18pt;
+}
+
+#prices #pricesHeader h1, #prices #pricesHeader p {
+  color: gray;
+}
+
+#prices #pricesBody {
+  background-color: #d1d1d1;
+  min-height: 585px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#prices .price-element-title {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom: #2ca01b 3px solid;
+}
+
+#prices .fa {
+  color: #2ca01b;
+}
+
+#prices .btn {
+  border-radius: 100px;
+  border: #2ca01b 3px solid;
+  font-size: 16pt;
+  font-weight: 400;
+}
+
+#contact {
+  height: auto;
+  width: 100%;
+}
+
+#contact #contactHeader p {
+  font-weight: 300;
+  font-size: 18pt;
+}
+
+#contact #contactHeader h1, #contact #contactHeader p {
+  color: white;
+}
+
+#contact #contactBody {
+  min-height: 585px;
+  background-color: white;
+}
+
+#contact #contactBody .col-md-4 .fa {
+  font-size: 3em;
+}
+
+#contact #contactBody .subtitle-p {
+  font-size: 18pt;
+  color: #2ca01b;
+}
+
+#contact #contactBody .display-4 {
+  font-size: 30pt;
+}
+
+#contact #contactBody .input-group-text {
+  background-color: #162913;
+  color: white;
+}
+
+#contact #contactBody .btn-custom {
+  background-color: #2ca01b;
+  border-radius: 100px;
+  color: white;
+}
+
+#contact #contactBody .btn-custom:hover {
+  opacity: 0.8;
+}
+/*# sourceMappingURL=style2.css.map */
